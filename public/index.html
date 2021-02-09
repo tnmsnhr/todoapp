@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header__section">
+            <h1 class="header__heading margin-top-lg">Start adding task!</h1>
+        </header>
+        
+        <section class="add-task__section margin-top-lg margin-bottom-lg">
+            <div class="form__area">
+                <form>
+                    <div class="form__group">
+                        <input type="text" placeholder="What are you thinking?" required id="title"/>
+                        <button class="btn btn-primary add-task__btn" >Add Task</button>
+                        <!-- <button class="btn btn-primary update-task__btn" >Update Task</button> -->
+                    </div>
+    
+                    <div class="form__group">
+                        <textarea type="text" placeholder="Add in details" required id="desc"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="stats">
+                <div class="stats__item">
+                    <p>total task count</p>
+                    <span class="task_count">0</span>
+                </div>
+
+                <div class="stats__item">
+                    <p>task updated</p>
+                    <span class="task_updated">0</span>
+                </div>
+                <div class="stats__item">
+                    <p>task deleted</p>
+                    <span class="task_deleted">0</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="task__lists">
+            <h3>All tasks</h3>
+            <div class="search margin-top-sm">
+                <input placeholder="Search for task" type="text" class="search__input" />
+            </div>
+            <div class="task__item--container margin-top-sm">
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
